@@ -23,3 +23,7 @@ Dependencies to install
 
 For heroku:
     1. start .env file
+    2. do not use hard coded port
+    3. make sure it has a start script in the package.json
+    4. push
+    

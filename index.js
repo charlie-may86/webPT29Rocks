@@ -12,16 +12,16 @@ server.use(helmet());
 
 const { PORT } = require("./config");
 
+server.get("/", (req, res) => {
+  res.send(`
+      <h1>Lambda School is the best<h1>
+      `);
+});
+
 server.use("*", (req, res, next) => {
   res.json({
     message: "Lambda School is the best!",
   });
-});
-
-server.get("/", (rew, res) => {
-  res.send(`
-    <h1>Lambda School is the best<h1>
-    `);
 });
 
 server.listen(PORT, () => {
