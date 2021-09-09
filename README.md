@@ -17,3 +17,9 @@
 9. hit npm run server
 10. Nodemon is for development purposes only, so we need to add a start script in the package.json
     "start": "node index.js",
+
+Dependencies to install
+    npm i express cors helmet dotenv
+
+For heroku:
+    1. start .env file
